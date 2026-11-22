@@ -1,0 +1,117 @@
+{
+  "bootstrap": 1000,
+  "semente": 42,
+  "metodo_inclinacao": "Newton-Raphson",
+  "validacao": {
+    "intercepto": {
+      "estimativa": 0.0,
+      "ic95": [
+        -0.0497,
+        0.0472
+      ]
+    },
+    "inclinacao": {
+      "estimativa": 1.0,
+      "ic95": [
+        0.8542,
+        1.1588
+      ]
+    },
+    "observado_esperado": {
+      "estimativa": 1.0,
+      "ic95": [
+        0.9556,
+        1.0439
+      ]
+    },
+    "media_prevista": 0.0799,
+    "brier": 0.07296,
+    "bruto": {
+      "intercepto": {
+        "estimativa": 0.0817,
+        "ic95": [
+          0.0336,
+          0.1285
+        ]
+      },
+      "inclinacao": {
+        "estimativa": 1.6581,
+        "ic95": [
+          1.4164,
+          1.9215
+        ]
+      },
+      "observado_esperado": {
+        "estimativa": 1.0781,
+        "ic95": [
+          1.0315,
+          1.1253
+        ]
+      },
+      "media_prevista": 0.0742,
+      "brier": 0.0731
+    },
+    "prevalencia": 0.0799,
+    "auc_roc": 0.5927,
+    "auc_roc_ic95_bootstrap": [
+      0.579,
+      0.6077
+    ]
+  },
+  "teste": {
+    "intercepto": {
+      "estimativa": -0.0572,
+      "ic95": [
+        -0.1121,
+        -0.004
+      ]
+    },
+    "inclinacao": {
+      "estimativa": 0.7012,
+      "ic95": [
+        0.542,
+        0.8552
+      ]
+    },
+    "observado_esperado": {
+      "estimativa": 0.949,
+      "ic95": [
+        0.9023,
+        0.9964
+      ]
+    },
+    "media_prevista": 0.0804,
+    "brier": 0.0703,
+    "bruto": {
+      "intercepto": {
+        "estimativa": 0.0271,
+        "ic95": [
+          -0.0281,
+          0.0799
+        ]
+      },
+      "inclinacao": {
+        "estimativa": 1.1627,
+        "ic95": [
+          0.8987,
+          1.418
+        ]
+      },
+      "observado_esperado": {
+        "estimativa": 1.0253,
+        "ic95": [
+          0.9744,
+          1.0763
+        ]
+      },
+      "media_prevista": 0.0744,
+      "brier": 0.07021
+    },
+    "prevalencia": 0.0763,
+    "auc_roc": 0.5666,
+    "auc_roc_ic95_bootstrap": [
+      0.552,
+      0.5815
+    ]
+  }
+}

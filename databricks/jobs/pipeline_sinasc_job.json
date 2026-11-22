@@ -1,0 +1,120 @@
+{
+  "run_name": "pipeline_sinasc",
+  "timeout_seconds": 14400,
+  "tasks": [
+    {
+      "task_key": "00_setup",
+      "notebook_task": {
+        "notebook_path": "/SINASC Project/00_01_setup",
+        "source": "WORKSPACE"
+      }
+    },
+    {
+      "task_key": "01_download_definitivos",
+      "depends_on": [
+        {
+          "task_key": "00_setup"
+        }
+      ],
+      "notebook_task": {
+        "notebook_path": "/SINASC Project/01_01_import_to_landingzone",
+        "source": "WORKSPACE",
+        "base_parameters": {
+          "pasta": "1996_/Dados/DNRES",
+          "ufs": "SP,BR",
+          "anos": "todos",
+          "executar": "sim"
+        }
+      }
+    },
+    {
+      "task_key": "01_download_preliminares",
+      "depends_on": [
+        {
+          "task_key": "01_download_definitivos"
+        }
+      ],
+      "notebook_task": {
+        "notebook_path": "/SINASC Project/01_01_import_to_landingzone",
+        "source": "WORKSPACE",
+        "base_parameters": {
+          "pasta": "PRELIM/DNRES",
+          "ufs": "SP",
+          "anos": "todos",
+          "executar": "sim"
+        }
+      }
+    },
+    {
+      "task_key": "01_descompactar",
+      "depends_on": [
+        {
+          "task_key": "01_download_preliminares"
+        }
+      ],
+      "notebook_task": {
+        "notebook_path": "/SINASC Project/01_02_unpack_dbc_to_dbf",
+        "source": "WORKSPACE"
+      }
+    },
+    {
+      "task_key": "01_converter",
+      "depends_on": [
+        {
+          "task_key": "01_descompactar"
+        }
+      ],
+      "notebook_task": {
+        "notebook_path": "/SINASC Project/01_03_convert_dbf_to_csv",
+        "source": "WORKSPACE",
+        "base_parameters": {
+          "arquivos": "",
+          "max_workers": "4"
+        }
+      }
+    },
+    {
+      "task_key": "02_bronze",
+      "depends_on": [
+        {
+          "task_key": "01_converter"
+        }
+      ],
+      "notebook_task": {
+        "notebook_path": "/SINASC Project/02_load_bronze",
+        "source": "WORKSPACE"
+      }
+    },
+    {
+      "task_key": "03_silver",
+      "depends_on": [
+        {
+          "task_key": "02_bronze"
+        }
+      ],
+      "notebook_task": {
+        "notebook_path": "/SINASC Project/03_load_silver",
+        "source": "WORKSPACE",
+        "base_parameters": {
+          "modo": "incremental",
+          "arquivos": ""
+        }
+      }
+    },
+    {
+      "task_key": "06_gold_ml",
+      "depends_on": [
+        {
+          "task_key": "03_silver"
+        }
+      ],
+      "notebook_task": {
+        "notebook_path": "/SINASC Project/06_load_gold_ml",
+        "source": "WORKSPACE",
+        "base_parameters": {
+          "forcar": "nao"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,825 @@
+{
+  "gerado_em": "2026-11-21 20:27:16",
+  "sklearn": "1.3.0",
+  "parametros": {
+    "estado_gold_ml": "/Volumes/workspace/sinasc/03_gold/_control/estado_gold_ml.json",
+    "ano_fim_treino": "2021",
+    "ano_fim_validacao": "2023",
+    "n_bootstrap": "500",
+    "n_repeticoes_permutacao": "30",
+    "saida": "/Volumes/workspace/sinasc/03_gold/_tcc_ml/teste_atributos_extras/"
+  },
+  "versao_gold_ml_conferida": 0,
+  "linhas_populacao": 147488,
+  "perfil": {
+    "codigos_brutos_naturalidade": [
+      {
+        "codigo": "835",
+        "n": 104752,
+        "pct": 71.02
+      },
+      {
+        "codigo": "829",
+        "n": 9126,
+        "pct": 6.19
+      },
+      {
+        "codigo": "831",
+        "n": 6784,
+        "pct": 4.6
+      },
+      {
+        "codigo": "827",
+        "n": 5991,
+        "pct": 4.06
+      },
+      {
+        "codigo": "841",
+        "n": 4764,
+        "pct": 3.23
+      },
+      {
+        "codigo": "826",
+        "n": 4052,
+        "pct": 2.75
+      },
+      {
+        "codigo": "823",
+        "n": 1993,
+        "pct": 1.35
+      },
+      {
+        "codigo": "822",
+        "n": 1366,
+        "pct": 0.93
+      },
+      {
+        "codigo": "N/A",
+        "n": 1304,
+        "pct": 0.88
+      },
+      {
+        "codigo": "821",
+        "n": 1248,
+        "pct": 0.85
+      },
+      {
+        "codigo": "825",
+        "n": 1086,
+        "pct": 0.74
+      },
+      {
+        "codigo": "833",
+        "n": 775,
+        "pct": 0.53
+      },
+      {
+        "codigo": "815",
+        "n": 565,
+        "pct": 0.38
+      },
+      {
+        "codigo": "824",
+        "n": 516,
+        "pct": 0.35
+      },
+      {
+        "codigo": "850",
+        "n": 512,
+        "pct": 0.35
+      }
+    ],
+    "codigos_brutos_ocupacao": [
+      {
+        "codigo": "999992",
+        "n": 52052,
+        "pct": 35.29
+      },
+      {
+        "codigo": "N/A",
+        "n": 34894,
+        "pct": 23.66
+      },
+      {
+        "codigo": "521110",
+        "n": 3260,
+        "pct": 2.21
+      },
+      {
+        "codigo": "784205",
+        "n": 2992,
+        "pct": 2.03
+      },
+      {
+        "codigo": "421125",
+        "n": 2939,
+        "pct": 1.99
+      },
+      {
+        "codigo": "411010",
+        "n": 2827,
+        "pct": 1.92
+      },
+      {
+        "codigo": "411005",
+        "n": 2674,
+        "pct": 1.81
+      },
+      {
+        "codigo": "999991",
+        "n": 2548,
+        "pct": 1.73
+      },
+      {
+        "codigo": "422105",
+        "n": 1660,
+        "pct": 1.13
+      },
+      {
+        "codigo": "252105",
+        "n": 1448,
+        "pct": 0.98
+      },
+      {
+        "codigo": "514210",
+        "n": 1275,
+        "pct": 0.86
+      },
+      {
+        "codigo": "241005",
+        "n": 1103,
+        "pct": 0.75
+      },
+      {
+        "codigo": "239415",
+        "n": 1100,
+        "pct": 0.75
+      },
+      {
+        "codigo": "516110",
+        "n": 1066,
+        "pct": 0.72
+      },
+      {
+        "codigo": "862150",
+        "n": 1041,
+        "pct": 0.71
+      },
+      {
+        "codigo": "223505",
+        "n": 924,
+        "pct": 0.63
+      },
+      {
+        "codigo": "516120",
+        "n": 911,
+        "pct": 0.62
+      },
+      {
+        "codigo": "513205",
+        "n": 879,
+        "pct": 0.6
+      },
+      {
+        "codigo": "251510",
+        "n": 854,
+        "pct": 0.58
+      },
+      {
+        "codigo": "252405",
+        "n": 844,
+        "pct": 0.57
+      },
+      {
+        "codigo": "322205",
+        "n": 819,
+        "pct": 0.56
+      },
+      {
+        "codigo": "223605",
+        "n": 801,
+        "pct": 0.54
+      },
+      {
+        "codigo": "422310",
+        "n": 701,
+        "pct": 0.48
+      },
+      {
+        "codigo": "223405",
+        "n": 691,
+        "pct": 0.47
+      },
+      {
+        "codigo": "512105",
+        "n": 637,
+        "pct": 0.43
+      }
+    ],
+    "categorias_naturalidade": [
+      {
+        "categoria": "SP",
+        "n": 104752,
+        "pct": 71.02,
+        "taxa_baixo_peso_pct": 7.67,
+        "n_treino": 77474
+      },
+      {
+        "categoria": "Nordeste",
+        "n": 25881,
+        "pct": 17.55,
+        "taxa_baixo_peso_pct": 7.21,
+        "n_treino": 18784
+      },
+      {
+        "categoria": "Sudeste (exceto SP)",
+        "n": 7719,
+        "pct": 5.23,
+        "taxa_baixo_peso_pct": 7.01,
+        "n_treino": 5688
+      },
+      {
+        "categoria": "Sul",
+        "n": 5457,
+        "pct": 3.7,
+        "taxa_baixo_peso_pct": 7.29,
+        "n_treino": 4504
+      },
+      {
+        "categoria": "Ignorado",
+        "n": 1322,
+        "pct": 0.9,
+        "taxa_baixo_peso_pct": 7.56,
+        "n_treino": 995
+      },
+      {
+        "categoria": "Centro-Oeste",
+        "n": 1287,
+        "pct": 0.87,
+        "taxa_baixo_peso_pct": 5.67,
+        "n_treino": 977
+      },
+      {
+        "categoria": "Norte",
+        "n": 1070,
+        "pct": 0.73,
+        "taxa_baixo_peso_pct": 5.79,
+        "n_treino": 712
+      }
+    ],
+    "categorias_ocupacao": [
+      {
+        "categoria": "Especial 999992",
+        "n": 52052,
+        "pct": 35.29,
+        "taxa_baixo_peso_pct": 8.08,
+        "n_treino": 40328
+      },
+      {
+        "categoria": "Ignorado",
+        "n": 34894,
+        "pct": 23.66,
+        "taxa_baixo_peso_pct": 7.07,
+        "n_treino": 28245
+      },
+      {
+        "categoria": "GG 2",
+        "n": 16265,
+        "pct": 11.03,
+        "taxa_baixo_peso_pct": 6.54,
+        "n_treino": 10380
+      },
+      {
+        "categoria": "GG 4",
+        "n": 14032,
+        "pct": 9.51,
+        "taxa_baixo_peso_pct": 6.88,
+        "n_treino": 9791
+      },
+      {
+        "categoria": "GG 5",
+        "n": 13295,
+        "pct": 9.01,
+        "taxa_baixo_peso_pct": 7.67,
+        "n_treino": 9450
+      },
+      {
+        "categoria": "GG 3",
+        "n": 5790,
+        "pct": 3.93,
+        "taxa_baixo_peso_pct": 6.77,
+        "n_treino": 3741
+      },
+      {
+        "categoria": "GG 7",
+        "n": 4016,
+        "pct": 2.72,
+        "taxa_baixo_peso_pct": 8.02,
+        "n_treino": 2249
+      },
+      {
+        "categoria": "Especial 999991",
+        "n": 2548,
+        "pct": 1.73,
+        "taxa_baixo_peso_pct": 11.73,
+        "n_treino": 1970
+      },
+      {
+        "categoria": "GG 1",
+        "n": 2470,
+        "pct": 1.67,
+        "taxa_baixo_peso_pct": 6.68,
+        "n_treino": 1497
+      },
+      {
+        "categoria": "GG 8",
+        "n": 1603,
+        "pct": 1.09,
+        "taxa_baixo_peso_pct": 8.3,
+        "n_treino": 1103
+      },
+      {
+        "categoria": "GG 6",
+        "n": 266,
+        "pct": 0.18,
+        "taxa_baixo_peso_pct": 7.52,
+        "n_treino": 194
+      },
+      {
+        "categoria": "GG 9",
+        "n": 106,
+        "pct": 0.07,
+        "taxa_baixo_peso_pct": 4.72,
+        "n_treino": 67
+      },
+      {
+        "categoria": "Especial 999993",
+        "n": 78,
+        "pct": 0.05,
+        "taxa_baixo_peso_pct": 8.97,
+        "n_treino": 69
+      },
+      {
+        "categoria": "GG 0",
+        "n": 38,
+        "pct": 0.03,
+        "taxa_baixo_peso_pct": 10.53,
+        "n_treino": 20
+      },
+      {
+        "categoria": "Especial 999994",
+        "n": 35,
+        "pct": 0.02,
+        "taxa_baixo_peso_pct": 5.71,
+        "n_treino": 30
+      }
+    ],
+    "preenchimento_por_ano": [
+      {
+        "ano": 2012,
+        "n": 10724,
+        "naturalidade_valida_pct": 96.2,
+        "ocupacao_cbo_valida_pct": 27.44,
+        "ocupacao_especial_99999x_pct": 42.73,
+        "idade_pai_valida_10a99_pct": 34.12,
+        "escolaridade_agregada_valida_pct": 0.0,
+        "uf_naturalidade_preenchida_pct": 0.0,
+        "mun_naturalidade_preenchido_pct": 100.0
+      },
+      {
+        "ano": 2013,
+        "n": 10758,
+        "naturalidade_valida_pct": 99.15,
+        "ocupacao_cbo_valida_pct": 30.97,
+        "ocupacao_especial_99999x_pct": 40.54,
+        "idade_pai_valida_10a99_pct": 30.92,
+        "escolaridade_agregada_valida_pct": 99.82,
+        "uf_naturalidade_preenchida_pct": 100.0,
+        "mun_naturalidade_preenchido_pct": 100.0
+      },
+      {
+        "ano": 2014,
+        "n": 10923,
+        "naturalidade_valida_pct": 99.59,
+        "ocupacao_cbo_valida_pct": 33.19,
+        "ocupacao_especial_99999x_pct": 38.08,
+        "idade_pai_valida_10a99_pct": 29.12,
+        "escolaridade_agregada_valida_pct": 99.81,
+        "uf_naturalidade_preenchida_pct": 100.0,
+        "mun_naturalidade_preenchido_pct": 100.0
+      },
+      {
+        "ano": 2015,
+        "n": 11590,
+        "naturalidade_valida_pct": 99.65,
+        "ocupacao_cbo_valida_pct": 32.21,
+        "ocupacao_especial_99999x_pct": 37.21,
+        "idade_pai_valida_10a99_pct": 30.29,
+        "escolaridade_agregada_valida_pct": 99.9,
+        "uf_naturalidade_preenchida_pct": 100.0,
+        "mun_naturalidade_preenchido_pct": 100.0
+      },
+      {
+        "ano": 2016,
+        "n": 10971,
+        "naturalidade_valida_pct": 99.43,
+        "ocupacao_cbo_valida_pct": 31.25,
+        "ocupacao_especial_99999x_pct": 38.94,
+        "idade_pai_valida_10a99_pct": 27.45,
+        "escolaridade_agregada_valida_pct": 99.77,
+        "uf_naturalidade_preenchida_pct": 100.0,
+        "mun_naturalidade_preenchido_pct": 100.0
+      },
+      {
+        "ano": 2017,
+        "n": 11178,
+        "naturalidade_valida_pct": 99.68,
+        "ocupacao_cbo_valida_pct": 31.45,
+        "ocupacao_especial_99999x_pct": 39.8,
+        "idade_pai_valida_10a99_pct": 25.33,
+        "escolaridade_agregada_valida_pct": 99.98,
+        "uf_naturalidade_preenchida_pct": 100.0,
+        "mun_naturalidade_preenchido_pct": 100.0
+      },
+      {
+        "ano": 2018,
+        "n": 11368,
+        "naturalidade_valida_pct": 99.43,
+        "ocupacao_cbo_valida_pct": 40.52,
+        "ocupacao_especial_99999x_pct": 40.15,
+        "idade_pai_valida_10a99_pct": 25.06,
+        "escolaridade_agregada_valida_pct": 99.98,
+        "uf_naturalidade_preenchida_pct": 100.0,
+        "mun_naturalidade_preenchido_pct": 100.0
+      },
+      {
+        "ano": 2019,
+        "n": 11053,
+        "naturalidade_valida_pct": 99.35,
+        "ocupacao_cbo_valida_pct": 41.55,
+        "ocupacao_especial_99999x_pct": 38.69,
+        "idade_pai_valida_10a99_pct": 25.58,
+        "escolaridade_agregada_valida_pct": 99.98,
+        "uf_naturalidade_preenchida_pct": 100.0,
+        "mun_naturalidade_preenchido_pct": 100.0
+      },
+      {
+        "ano": 2020,
+        "n": 10416,
+        "naturalidade_valida_pct": 99.15,
+        "ocupacao_cbo_valida_pct": 43.22,
+        "ocupacao_especial_99999x_pct": 35.89,
+        "idade_pai_valida_10a99_pct": 25.07,
+        "escolaridade_agregada_valida_pct": 99.69,
+        "uf_naturalidade_preenchida_pct": 100.0,
+        "mun_naturalidade_preenchido_pct": 100.0
+      },
+      {
+        "ano": 2021,
+        "n": 10153,
+        "naturalidade_valida_pct": 99.14,
+        "ocupacao_cbo_valida_pct": 41.5,
+        "ocupacao_especial_99999x_pct": 36.27,
+        "idade_pai_valida_10a99_pct": 24.85,
+        "escolaridade_agregada_valida_pct": 99.99,
+        "uf_naturalidade_preenchida_pct": 100.0,
+        "mun_naturalidade_preenchido_pct": 100.0
+      },
+      {
+        "ano": 2022,
+        "n": 10071,
+        "naturalidade_valida_pct": 99.18,
+        "ocupacao_cbo_valida_pct": 44.31,
+        "ocupacao_especial_99999x_pct": 32.78,
+        "idade_pai_valida_10a99_pct": 26.99,
+        "escolaridade_agregada_valida_pct": 100.0,
+        "uf_naturalidade_preenchida_pct": 100.0,
+        "mun_naturalidade_preenchido_pct": 100.0
+      },
+      {
+        "ano": 2023,
+        "n": 9894,
+        "naturalidade_valida_pct": 99.26,
+        "ocupacao_cbo_valida_pct": 49.87,
+        "ocupacao_especial_99999x_pct": 31.75,
+        "idade_pai_valida_10a99_pct": 27.19,
+        "escolaridade_agregada_valida_pct": 99.98,
+        "uf_naturalidade_preenchida_pct": 100.0,
+        "mun_naturalidade_preenchido_pct": 100.0
+      },
+      {
+        "ano": 2024,
+        "n": 9199,
+        "naturalidade_valida_pct": 99.16,
+        "ocupacao_cbo_valida_pct": 53.02,
+        "ocupacao_especial_99999x_pct": 33.14,
+        "idade_pai_valida_10a99_pct": 28.57,
+        "escolaridade_agregada_valida_pct": 99.92,
+        "uf_naturalidade_preenchida_pct": 100.0,
+        "mun_naturalidade_preenchido_pct": 100.0
+      },
+      {
+        "ano": 2025,
+        "n": 9190,
+        "naturalidade_valida_pct": 98.98,
+        "ocupacao_cbo_valida_pct": 55.67,
+        "ocupacao_especial_99999x_pct": 30.74,
+        "idade_pai_valida_10a99_pct": 30.7,
+        "escolaridade_agregada_valida_pct": 99.92,
+        "uf_naturalidade_preenchida_pct": 100.0,
+        "mun_naturalidade_preenchido_pct": 100.0
+      }
+    ]
+  },
+  "variantes": {
+    "referencia": {
+      "grade": [
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "auc_roc_val": 0.5932,
+          "auc_pr_val": 0.1087,
+          "brier_val": 0.0731
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 100,
+          "auc_roc_val": 0.5931,
+          "auc_pr_val": 0.1078,
+          "brier_val": 0.0731
+        },
+        {
+          "max_depth": 8,
+          "min_samples_leaf": 50,
+          "auc_roc_val": 0.5942,
+          "auc_pr_val": 0.1081,
+          "brier_val": 0.0731
+        },
+        {
+          "max_depth": 8,
+          "min_samples_leaf": 100,
+          "auc_roc_val": 0.595,
+          "auc_pr_val": 0.1078,
+          "brier_val": 0.0731
+        }
+      ],
+      "melhor": {
+        "max_depth": 6,
+        "min_samples_leaf": 50,
+        "auc_roc_val": 0.5932,
+        "auc_pr_val": 0.1087,
+        "brier_val": 0.0731
+      },
+      "teste": {
+        "auc_roc": 0.5668,
+        "auc_pr": 0.0948,
+        "brier": 0.0702
+      }
+    },
+    "naturalidade": {
+      "grade": [
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "auc_roc_val": 0.5946,
+          "auc_pr_val": 0.1094,
+          "brier_val": 0.0731
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 100,
+          "auc_roc_val": 0.5941,
+          "auc_pr_val": 0.1086,
+          "brier_val": 0.0731
+        },
+        {
+          "max_depth": 8,
+          "min_samples_leaf": 50,
+          "auc_roc_val": 0.5952,
+          "auc_pr_val": 0.1093,
+          "brier_val": 0.073
+        },
+        {
+          "max_depth": 8,
+          "min_samples_leaf": 100,
+          "auc_roc_val": 0.5952,
+          "auc_pr_val": 0.1091,
+          "brier_val": 0.0731
+        }
+      ],
+      "melhor": {
+        "max_depth": 6,
+        "min_samples_leaf": 50,
+        "auc_roc_val": 0.5946,
+        "auc_pr_val": 0.1094,
+        "brier_val": 0.0731
+      },
+      "teste": {
+        "auc_roc": 0.5682,
+        "auc_pr": 0.0958,
+        "brier": 0.0702
+      }
+    },
+    "ocupacao": {
+      "grade": [
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "auc_roc_val": 0.5968,
+          "auc_pr_val": 0.1102,
+          "brier_val": 0.0731
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 100,
+          "auc_roc_val": 0.597,
+          "auc_pr_val": 0.1094,
+          "brier_val": 0.0731
+        },
+        {
+          "max_depth": 8,
+          "min_samples_leaf": 50,
+          "auc_roc_val": 0.5979,
+          "auc_pr_val": 0.1095,
+          "brier_val": 0.0731
+        },
+        {
+          "max_depth": 8,
+          "min_samples_leaf": 100,
+          "auc_roc_val": 0.5966,
+          "auc_pr_val": 0.1089,
+          "brier_val": 0.0731
+        }
+      ],
+      "melhor": {
+        "max_depth": 6,
+        "min_samples_leaf": 50,
+        "auc_roc_val": 0.5968,
+        "auc_pr_val": 0.1102,
+        "brier_val": 0.0731
+      },
+      "teste": {
+        "auc_roc": 0.5666,
+        "auc_pr": 0.0967,
+        "brier": 0.0702
+      }
+    },
+    "naturalidade_ocupacao": {
+      "grade": [
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "auc_roc_val": 0.5988,
+          "auc_pr_val": 0.1109,
+          "brier_val": 0.0731
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 100,
+          "auc_roc_val": 0.5986,
+          "auc_pr_val": 0.1105,
+          "brier_val": 0.0731
+        },
+        {
+          "max_depth": 8,
+          "min_samples_leaf": 50,
+          "auc_roc_val": 0.5992,
+          "auc_pr_val": 0.1108,
+          "brier_val": 0.073
+        },
+        {
+          "max_depth": 8,
+          "min_samples_leaf": 100,
+          "auc_roc_val": 0.599,
+          "auc_pr_val": 0.111,
+          "brier_val": 0.0731
+        }
+      ],
+      "melhor": {
+        "max_depth": 8,
+        "min_samples_leaf": 100,
+        "auc_roc_val": 0.599,
+        "auc_pr_val": 0.111,
+        "brier_val": 0.0731
+      },
+      "teste": {
+        "auc_roc": 0.571,
+        "auc_pr": 0.0984,
+        "brier": 0.0702
+      }
+    }
+  },
+  "conferencia_referencia_prof6_folha50": {
+    "auc_roc": 0.5668,
+    "auc_pr": 0.0948,
+    "brier": 0.0702
+  },
+  "diferenca_vs_referencia_teste": {
+    "naturalidade": {
+      "delta_auc_roc": 0.0013,
+      "delta_auc_roc_ic95": [
+        -0.0014,
+        0.0038
+      ],
+      "delta_auc_pr": 0.0011,
+      "delta_auc_pr_ic95": [
+        -0.0002,
+        0.0026
+      ]
+    },
+    "ocupacao": {
+      "delta_auc_roc": -0.0003,
+      "delta_auc_roc_ic95": [
+        -0.0034,
+        0.0027
+      ],
+      "delta_auc_pr": 0.002,
+      "delta_auc_pr_ic95": [
+        0.0002,
+        0.0041
+      ]
+    },
+    "naturalidade_ocupacao": {
+      "delta_auc_roc": 0.0041,
+      "delta_auc_roc_ic95": [
+        -0.0002,
+        0.0083
+      ],
+      "delta_auc_pr": 0.0036,
+      "delta_auc_pr_ic95": [
+        0.0014,
+        0.0061
+      ]
+    }
+  },
+  "n_bootstrap": 500,
+  "importancia_permutacao_validacao_modelo_com_extras": {
+    "idade_mae": {
+      "queda_auc_pr_media": 0.00505,
+      "queda_auc_pr_dp": 0.00123,
+      "queda_auc_roc_media": 0.01534,
+      "queda_auc_roc_dp": 0.00252
+    },
+    "qtd_gestacoes_anteriores": {
+      "queda_auc_pr_media": 0.00271,
+      "queda_auc_pr_dp": 0.00085,
+      "queda_auc_roc_media": 0.00241,
+      "queda_auc_roc_dp": 0.00148
+    },
+    "qtd_partos_normais": {
+      "queda_auc_pr_media": 0.00045,
+      "queda_auc_pr_dp": 0.00037,
+      "queda_auc_roc_media": 0.00024,
+      "queda_auc_roc_dp": 0.00082
+    },
+    "qtd_partos_cesareos": {
+      "queda_auc_pr_media": 0.00051,
+      "queda_auc_pr_dp": 0.00102,
+      "queda_auc_roc_media": 0.00278,
+      "queda_auc_roc_dp": 0.00235
+    },
+    "qtd_filhos_vivos": {
+      "queda_auc_pr_media": 0.00671,
+      "queda_auc_pr_dp": 0.00183,
+      "queda_auc_roc_media": 0.01787,
+      "queda_auc_roc_dp": 0.00484
+    },
+    "qtd_perdas_fetais_abortos": {
+      "queda_auc_pr_media": 0.00328,
+      "queda_auc_pr_dp": 0.00154,
+      "queda_auc_roc_media": 0.00585,
+      "queda_auc_roc_dp": 0.00216
+    },
+    "id_raca_cor_mae": {
+      "queda_auc_pr_media": 0.0007,
+      "queda_auc_pr_dp": 0.00052,
+      "queda_auc_roc_media": 0.00176,
+      "queda_auc_roc_dp": 0.00113
+    },
+    "id_escolaridade_mae_2010": {
+      "queda_auc_pr_media": 0.00285,
+      "queda_auc_pr_dp": 0.00089,
+      "queda_auc_roc_media": 0.0065,
+      "queda_auc_roc_dp": 0.00184
+    },
+    "id_estado_civil_mae": {
+      "queda_auc_pr_media": 0.00763,
+      "queda_auc_pr_dp": 0.00117,
+      "queda_auc_roc_media": 0.01777,
+      "queda_auc_roc_dp": 0.00269
+    },
+    "naturalidade_mae": {
+      "queda_auc_pr_media": 0.00147,
+      "queda_auc_pr_dp": 0.00054,
+      "queda_auc_roc_media": 0.00209,
+      "queda_auc_roc_dp": 0.00101
+    },
+    "ocupacao_mae_gg": {
+      "queda_auc_pr_media": 0.00251,
+      "queda_auc_pr_dp": 0.00075,
+      "queda_auc_roc_media": 0.00568,
+      "queda_auc_roc_dp": 0.00149
+    }
+  },
+  "n_repeticoes_permutacao": 30
+}

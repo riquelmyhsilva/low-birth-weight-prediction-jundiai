@@ -1,0 +1,6 @@
+# Local post-processing scripts (analysis/). The notebooks run on Databricks serverless.
+numpy
+pandas
+scipy
+scikit-learn==1.3.0
+matplotlib

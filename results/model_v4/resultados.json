@@ -1,0 +1,2293 @@
+{
+  "versao": 4,
+  "gerado_em": "2026-11-21 23:30:02",
+  "sklearn": "1.3.0",
+  "tratamento_ausentes": {
+    "metodo": "imputação múltipla por equações encadeadas, ajustada só no treino; média das florestas",
+    "n_imputacoes": 5,
+    "codigo_9_como_ausente": true,
+    "indicador_de_ausencia": false,
+    "seg_ajuste_imputadores_treino": 611.4
+  },
+  "ausencia_por_periodo": {
+    "idade_mae": {
+      "treino": {
+        "n": 1,
+        "pct": 0.001
+      },
+      "validacao": {
+        "n": 2,
+        "pct": 0.01
+      },
+      "teste": {
+        "n": 1,
+        "pct": 0.005
+      }
+    },
+    "qtd_gestacoes_anteriores": {
+      "treino": {
+        "n": 498,
+        "pct": 0.456
+      },
+      "validacao": {
+        "n": 3,
+        "pct": 0.015
+      },
+      "teste": {
+        "n": 14,
+        "pct": 0.076
+      }
+    },
+    "qtd_partos_normais": {
+      "treino": {
+        "n": 527,
+        "pct": 0.483
+      },
+      "validacao": {
+        "n": 5,
+        "pct": 0.025
+      },
+      "teste": {
+        "n": 17,
+        "pct": 0.092
+      }
+    },
+    "qtd_partos_cesareos": {
+      "treino": {
+        "n": 537,
+        "pct": 0.492
+      },
+      "validacao": {
+        "n": 6,
+        "pct": 0.03
+      },
+      "teste": {
+        "n": 15,
+        "pct": 0.082
+      }
+    },
+    "qtd_filhos_vivos": {
+      "treino": {
+        "n": 206,
+        "pct": 0.189
+      },
+      "validacao": {
+        "n": 12,
+        "pct": 0.06
+      },
+      "teste": {
+        "n": 6,
+        "pct": 0.033
+      }
+    },
+    "qtd_perdas_fetais_abortos": {
+      "treino": {
+        "n": 283,
+        "pct": 0.259
+      },
+      "validacao": {
+        "n": 13,
+        "pct": 0.065
+      },
+      "teste": {
+        "n": 10,
+        "pct": 0.054
+      }
+    },
+    "id_raca_cor_mae": {
+      "treino": {
+        "n": 780,
+        "pct": 0.715
+      },
+      "validacao": {
+        "n": 48,
+        "pct": 0.24
+      },
+      "teste": {
+        "n": 64,
+        "pct": 0.348
+      }
+    },
+    "id_escolaridade_mae_2010": {
+      "treino": {
+        "n": 611,
+        "pct": 0.56
+      },
+      "validacao": {
+        "n": 7,
+        "pct": 0.035
+      },
+      "teste": {
+        "n": 18,
+        "pct": 0.098
+      }
+    },
+    "id_estado_civil_mae": {
+      "treino": {
+        "n": 269,
+        "pct": 0.246
+      },
+      "validacao": {
+        "n": 34,
+        "pct": 0.17
+      },
+      "teste": {
+        "n": 42,
+        "pct": 0.228
+      }
+    }
+  },
+  "comparacao_periodos": [
+    {
+      "variavel": "idade_mae",
+      "categoria": "10 a 19",
+      "treino": 11.16,
+      "validacao": 7.47,
+      "teste": 7.03
+    },
+    {
+      "variavel": "idade_mae",
+      "categoria": "20 a 34",
+      "treino": 71.67,
+      "validacao": 70.81,
+      "teste": 70.86
+    },
+    {
+      "variavel": "idade_mae",
+      "categoria": "35 ou mais",
+      "treino": 17.16,
+      "validacao": 21.7,
+      "teste": 22.11
+    },
+    {
+      "variavel": "idade_mae",
+      "categoria": "Ignorado",
+      "treino": 0.0,
+      "validacao": 0.01,
+      "teste": 0.01
+    },
+    {
+      "variavel": "qtd_gestacoes_anteriores",
+      "categoria": "0",
+      "treino": 40.94,
+      "validacao": 38.79,
+      "teste": 39.18
+    },
+    {
+      "variavel": "qtd_gestacoes_anteriores",
+      "categoria": "1",
+      "treino": 31.45,
+      "validacao": 30.4,
+      "teste": 30.24
+    },
+    {
+      "variavel": "qtd_gestacoes_anteriores",
+      "categoria": "2",
+      "treino": 15.71,
+      "validacao": 17.15,
+      "teste": 16.85
+    },
+    {
+      "variavel": "qtd_gestacoes_anteriores",
+      "categoria": "3 ou mais",
+      "treino": 11.44,
+      "validacao": 13.64,
+      "teste": 13.65
+    },
+    {
+      "variavel": "qtd_gestacoes_anteriores",
+      "categoria": "Ignorado",
+      "treino": 0.46,
+      "validacao": 0.02,
+      "teste": 0.08
+    },
+    {
+      "variavel": "qtd_partos_normais",
+      "categoria": "0",
+      "treino": 67.48,
+      "validacao": 63.06,
+      "teste": 64.9
+    },
+    {
+      "variavel": "qtd_partos_normais",
+      "categoria": "1",
+      "treino": 19.59,
+      "validacao": 20.95,
+      "teste": 20.16
+    },
+    {
+      "variavel": "qtd_partos_normais",
+      "categoria": "2 ou mais",
+      "treino": 12.45,
+      "validacao": 15.96,
+      "teste": 14.84
+    },
+    {
+      "variavel": "qtd_partos_normais",
+      "categoria": "Ignorado",
+      "treino": 0.48,
+      "validacao": 0.03,
+      "teste": 0.09
+    },
+    {
+      "variavel": "qtd_partos_cesareos",
+      "categoria": "0",
+      "treino": 73.99,
+      "validacao": 71.19,
+      "teste": 69.55
+    },
+    {
+      "variavel": "qtd_partos_cesareos",
+      "categoria": "1",
+      "treino": 19.91,
+      "validacao": 21.5,
+      "teste": 22.42
+    },
+    {
+      "variavel": "qtd_partos_cesareos",
+      "categoria": "2 ou mais",
+      "treino": 5.61,
+      "validacao": 7.27,
+      "teste": 7.95
+    },
+    {
+      "variavel": "qtd_partos_cesareos",
+      "categoria": "Ignorado",
+      "treino": 0.49,
+      "validacao": 0.03,
+      "teste": 0.08
+    },
+    {
+      "variavel": "qtd_filhos_vivos",
+      "categoria": "0",
+      "treino": 46.77,
+      "validacao": 45.27,
+      "teste": 46.15
+    },
+    {
+      "variavel": "qtd_filhos_vivos",
+      "categoria": "1",
+      "treino": 33.13,
+      "validacao": 32.76,
+      "teste": 32.84
+    },
+    {
+      "variavel": "qtd_filhos_vivos",
+      "categoria": "2",
+      "treino": 12.98,
+      "validacao": 14.3,
+      "teste": 13.64
+    },
+    {
+      "variavel": "qtd_filhos_vivos",
+      "categoria": "3 ou mais",
+      "treino": 6.93,
+      "validacao": 7.61,
+      "teste": 7.33
+    },
+    {
+      "variavel": "qtd_filhos_vivos",
+      "categoria": "Ignorado",
+      "treino": 0.19,
+      "validacao": 0.06,
+      "teste": 0.03
+    },
+    {
+      "variavel": "qtd_perdas_fetais_abortos",
+      "categoria": "0",
+      "treino": 81.89,
+      "validacao": 78.78,
+      "teste": 77.59
+    },
+    {
+      "variavel": "qtd_perdas_fetais_abortos",
+      "categoria": "1",
+      "treino": 14.45,
+      "validacao": 16.38,
+      "teste": 17.11
+    },
+    {
+      "variavel": "qtd_perdas_fetais_abortos",
+      "categoria": "2 ou mais",
+      "treino": 3.4,
+      "validacao": 4.77,
+      "teste": 5.24
+    },
+    {
+      "variavel": "qtd_perdas_fetais_abortos",
+      "categoria": "Ignorado",
+      "treino": 0.26,
+      "validacao": 0.07,
+      "teste": 0.05
+    },
+    {
+      "variavel": "id_raca_cor_mae",
+      "categoria": "Amarela",
+      "treino": 0.39,
+      "validacao": 0.46,
+      "teste": 0.58
+    },
+    {
+      "variavel": "id_raca_cor_mae",
+      "categoria": "Branca",
+      "treino": 61.01,
+      "validacao": 54.9,
+      "teste": 53.38
+    },
+    {
+      "variavel": "id_raca_cor_mae",
+      "categoria": "Ignorado",
+      "treino": 0.71,
+      "validacao": 0.24,
+      "teste": 0.35
+    },
+    {
+      "variavel": "id_raca_cor_mae",
+      "categoria": "Indígena",
+      "treino": 0.04,
+      "validacao": 0.09,
+      "teste": 0.08
+    },
+    {
+      "variavel": "id_raca_cor_mae",
+      "categoria": "Parda",
+      "treino": 32.2,
+      "validacao": 36.16,
+      "teste": 38.25
+    },
+    {
+      "variavel": "id_raca_cor_mae",
+      "categoria": "Preta",
+      "treino": 5.64,
+      "validacao": 8.15,
+      "teste": 7.37
+    },
+    {
+      "variavel": "id_escolaridade_mae_2010",
+      "categoria": "Fundamental I",
+      "treino": 1.71,
+      "validacao": 0.77,
+      "teste": 0.48
+    },
+    {
+      "variavel": "id_escolaridade_mae_2010",
+      "categoria": "Fundamental II",
+      "treino": 13.45,
+      "validacao": 8.65,
+      "teste": 7.01
+    },
+    {
+      "variavel": "id_escolaridade_mae_2010",
+      "categoria": "Ignorado",
+      "treino": 0.56,
+      "validacao": 0.04,
+      "teste": 0.1
+    },
+    {
+      "variavel": "id_escolaridade_mae_2010",
+      "categoria": "Médio",
+      "treino": 57.58,
+      "validacao": 58.67,
+      "teste": 58.39
+    },
+    {
+      "variavel": "id_escolaridade_mae_2010",
+      "categoria": "Sem escolaridade",
+      "treino": 0.1,
+      "validacao": 0.05,
+      "teste": 0.03
+    },
+    {
+      "variavel": "id_escolaridade_mae_2010",
+      "categoria": "Superior completo",
+      "treino": 21.48,
+      "validacao": 26.73,
+      "teste": 29.21
+    },
+    {
+      "variavel": "id_escolaridade_mae_2010",
+      "categoria": "Superior incompleto",
+      "treino": 5.13,
+      "validacao": 5.1,
+      "teste": 4.78
+    },
+    {
+      "variavel": "id_estado_civil_mae",
+      "categoria": "Casada",
+      "treino": 49.49,
+      "validacao": 47.33,
+      "teste": 47.43
+    },
+    {
+      "variavel": "id_estado_civil_mae",
+      "categoria": "Ignorado",
+      "treino": 0.25,
+      "validacao": 0.17,
+      "teste": 0.23
+    },
+    {
+      "variavel": "id_estado_civil_mae",
+      "categoria": "Separada/divorciada",
+      "treino": 2.88,
+      "validacao": 3.61,
+      "teste": 3.38
+    },
+    {
+      "variavel": "id_estado_civil_mae",
+      "categoria": "Solteira",
+      "treino": 39.99,
+      "validacao": 40.91,
+      "teste": 43.35
+    },
+    {
+      "variavel": "id_estado_civil_mae",
+      "categoria": "União estável",
+      "treino": 7.22,
+      "validacao": 7.77,
+      "teste": 5.43
+    },
+    {
+      "variavel": "id_estado_civil_mae",
+      "categoria": "Viúva",
+      "treino": 0.18,
+      "validacao": 0.21,
+      "teste": 0.18
+    }
+  ],
+  "calibracao_teste": {
+    "intercepto": -0.0572,
+    "inclinacao": 0.7012,
+    "razao_observado_esperado": 0.949
+  },
+  "case_mix": {
+    "validacao": {
+      "n": 19965,
+      "auc_observada": 0.5927,
+      "auc_observada_ic95": [
+        0.578,
+        0.6071
+      ],
+      "auc_corrigida_casemix": 0.5936,
+      "auc_corrigida_ic95": [
+        0.5809,
+        0.608
+      ],
+      "prob_calibrada_media": 0.0799,
+      "prob_calibrada_dp": 0.0248,
+      "logit_medio": -2.49,
+      "logit_dp": 0.3354
+    },
+    "teste": {
+      "n": 18389,
+      "auc_observada": 0.5666,
+      "auc_observada_ic95": [
+        0.5507,
+        0.5809
+      ],
+      "auc_corrigida_casemix": 0.5937,
+      "auc_corrigida_ic95": [
+        0.5789,
+        0.6089
+      ],
+      "prob_calibrada_media": 0.0804,
+      "prob_calibrada_dp": 0.0249,
+      "logit_medio": -2.4837,
+      "logit_dp": 0.3355
+    }
+  },
+  "n_sorteios_casemix": 500,
+  "parametros": {
+    "uf_preferida": "SP",
+    "uf_reserva": "BR",
+    "municipios_ibge6": "350840,350960,352400,352520,352590,352730,355650",
+    "ano_inicio": "2012",
+    "ano_fim": "2025",
+    "peso_min_g": "500",
+    "somente_gestacao_unica": "sim",
+    "tabela_ml": "/Volumes/workspace/sinasc/03_gold/ml_baixo_peso_rmj",
+    "estado_gold_ml": "/Volumes/workspace/sinasc/03_gold/_control/estado_gold_ml.json",
+    "ano_fim_treino": "2021",
+    "ano_fim_validacao": "2023",
+    "n_bootstrap": "1000",
+    "n_repeticoes_permutacao": "30",
+    "n_imputacoes": "5",
+    "n_sorteios_casemix": "500",
+    "saida": "/Volumes/workspace/sinasc/03_gold/_tcc_ml/v4_tripod/"
+  },
+  "gold_ml": {
+    "tabela": "workspace.sinasc.ml_baixo_peso_rmj",
+    "versao_tabela": 0,
+    "versao_silver": 201,
+    "gerado_em": "2026-11-21T18:13:14.291457+00:00"
+  },
+  "fonte_por_ano": [
+    {
+      "ano": 2012,
+      "uf_fonte": "SP",
+      "registros": 10991,
+      "duplicatas_removidas": 0
+    },
+    {
+      "ano": 2013,
+      "uf_fonte": "SP",
+      "registros": 11037,
+      "duplicatas_removidas": 0
+    },
+    {
+      "ano": 2014,
+      "uf_fonte": "SP",
+      "registros": 11192,
+      "duplicatas_removidas": 1
+    },
+    {
+      "ano": 2015,
+      "uf_fonte": "SP",
+      "registros": 11850,
+      "duplicatas_removidas": 0
+    },
+    {
+      "ano": 2016,
+      "uf_fonte": "SP",
+      "registros": 11239,
+      "duplicatas_removidas": 0
+    },
+    {
+      "ano": 2017,
+      "uf_fonte": "SP",
+      "registros": 11474,
+      "duplicatas_removidas": 0
+    },
+    {
+      "ano": 2018,
+      "uf_fonte": "SP",
+      "registros": 11715,
+      "duplicatas_removidas": 0
+    },
+    {
+      "ano": 2019,
+      "uf_fonte": "SP",
+      "registros": 11341,
+      "duplicatas_removidas": 0
+    },
+    {
+      "ano": 2020,
+      "uf_fonte": "SP",
+      "registros": 10693,
+      "duplicatas_removidas": 0
+    },
+    {
+      "ano": 2021,
+      "uf_fonte": "SP",
+      "registros": 10436,
+      "duplicatas_removidas": 0
+    },
+    {
+      "ano": 2022,
+      "uf_fonte": "SP",
+      "registros": 10337,
+      "duplicatas_removidas": 0
+    },
+    {
+      "ano": 2023,
+      "uf_fonte": "SP",
+      "registros": 10219,
+      "duplicatas_removidas": 0
+    },
+    {
+      "ano": 2024,
+      "uf_fonte": "SP",
+      "registros": 9434,
+      "duplicatas_removidas": 0
+    },
+    {
+      "ano": 2025,
+      "uf_fonte": "SP",
+      "registros": 9434,
+      "duplicatas_removidas": 0
+    }
+  ],
+  "fluxo_populacao": [
+    {
+      "etapa": "Registros com residência na RMJ (fonte por ano)",
+      "n": 151392
+    },
+    {
+      "etapa": "Após remoção de duplicatas exatas",
+      "n": 151391
+    },
+    {
+      "etapa": "Com peso registrado (> 0 e < 9.999 g)",
+      "n": 151388
+    },
+    {
+      "etapa": "Com peso ≥ 500 g",
+      "n": 151278
+    },
+    {
+      "etapa": "Gestação única (exclui dupla, tripla ou mais e ignorado)",
+      "n": 147488
+    }
+  ],
+  "excluidos": {
+    "peso_ausente_ou_invalido": 3,
+    "peso_menor_500g": 110,
+    "pesos_menores_500g_valores": [
+      153,
+      235,
+      244,
+      250,
+      255,
+      290,
+      295,
+      295,
+      295,
+      300,
+      300,
+      310,
+      311,
+      315,
+      316,
+      317,
+      324,
+      325,
+      328,
+      330,
+      335,
+      335,
+      336,
+      337,
+      347,
+      350,
+      350,
+      350,
+      350,
+      354,
+      355,
+      355,
+      360,
+      375,
+      375,
+      385,
+      385,
+      390,
+      390,
+      400,
+      400,
+      405,
+      405,
+      405,
+      415,
+      420,
+      420,
+      420,
+      420,
+      420,
+      425,
+      425,
+      430,
+      432,
+      435,
+      435,
+      440,
+      440,
+      440,
+      445,
+      445,
+      450,
+      450,
+      450,
+      450,
+      450,
+      450,
+      454,
+      455,
+      456,
+      460,
+      460,
+      460,
+      460,
+      460,
+      465,
+      465,
+      465,
+      465,
+      470,
+      470,
+      470,
+      470,
+      470,
+      475,
+      475,
+      480,
+      480,
+      480,
+      480,
+      480,
+      480,
+      480,
+      480,
+      480,
+      480,
+      480,
+      480,
+      485,
+      485,
+      485,
+      485,
+      485,
+      490,
+      490,
+      490,
+      495,
+      495,
+      495,
+      495
+    ],
+    "gestacao_multipla": 3736,
+    "gestacao_ignorada": 54,
+    "baixo_peso_entre_multiplas_pct": 65.95
+  },
+  "auditoria_dominios": {
+    "idade_mae": {
+      "nulo_ou_menos1": 0,
+      "codigo_99": 0,
+      "fora_da_faixa": 4,
+      "faixa_aceita": [
+        10,
+        55
+      ],
+      "min_valido": 12.0,
+      "max_valido": 52.0
+    },
+    "qtd_gestacoes_anteriores": {
+      "nulo_ou_menos1": 515,
+      "codigo_99": 0,
+      "fora_da_faixa": 0,
+      "faixa_aceita": [
+        0,
+        30
+      ],
+      "min_valido": 0.0,
+      "max_valido": 17.0
+    },
+    "qtd_partos_normais": {
+      "nulo_ou_menos1": 535,
+      "codigo_99": 0,
+      "fora_da_faixa": 14,
+      "faixa_aceita": [
+        0,
+        30
+      ],
+      "min_valido": 0.0,
+      "max_valido": 23.0
+    },
+    "qtd_partos_cesareos": {
+      "nulo_ou_menos1": 558,
+      "codigo_99": 0,
+      "fora_da_faixa": 0,
+      "faixa_aceita": [
+        0,
+        30
+      ],
+      "min_valido": 0.0,
+      "max_valido": 30.0
+    },
+    "qtd_filhos_vivos": {
+      "nulo_ou_menos1": 222,
+      "codigo_99": 2,
+      "fora_da_faixa": 0,
+      "faixa_aceita": [
+        0,
+        30
+      ],
+      "min_valido": 0.0,
+      "max_valido": 14.0
+    },
+    "qtd_perdas_fetais_abortos": {
+      "nulo_ou_menos1": 301,
+      "codigo_99": 5,
+      "fora_da_faixa": 0,
+      "faixa_aceita": [
+        0,
+        30
+      ],
+      "min_valido": 0.0,
+      "max_valido": 20.0
+    },
+    "id_raca_cor_mae": {
+      "nulo_ou_menos1": 887,
+      "codigo_9": 5,
+      "fora_do_dominio": 0,
+      "valores_fora": []
+    },
+    "id_escolaridade_mae_2010": {
+      "nulo_ou_menos1": 560,
+      "codigo_9": 76,
+      "fora_do_dominio": 0,
+      "valores_fora": []
+    },
+    "id_estado_civil_mae": {
+      "nulo_ou_menos1": 157,
+      "codigo_9": 188,
+      "fora_do_dominio": 0,
+      "valores_fora": []
+    },
+    "incoerencia_partos_maior_que_gestacoes": 290
+  },
+  "ausencia": {
+    "idade_mae": {
+      "n": 4,
+      "pct": 0.0027
+    },
+    "qtd_gestacoes_anteriores": {
+      "n": 515,
+      "pct": 0.3492
+    },
+    "qtd_partos_normais": {
+      "n": 549,
+      "pct": 0.3722
+    },
+    "qtd_partos_cesareos": {
+      "n": 558,
+      "pct": 0.3783
+    },
+    "qtd_filhos_vivos": {
+      "n": 224,
+      "pct": 0.1519
+    },
+    "qtd_perdas_fetais_abortos": {
+      "n": 306,
+      "pct": 0.2075
+    },
+    "id_raca_cor_mae": {
+      "n": 892,
+      "pct": 0.6048
+    },
+    "id_escolaridade_mae_2010": {
+      "n": 636,
+      "pct": 0.4312
+    },
+    "id_estado_civil_mae": {
+      "n": 345,
+      "pct": 0.2339
+    }
+  },
+  "por_ano": [
+    {
+      "ano_nasc": 2012,
+      "nascimentos": 10724,
+      "baixo_peso": 810,
+      "taxa_baixo_peso_pct": 7.55,
+      "uf_fonte": "SP"
+    },
+    {
+      "ano_nasc": 2013,
+      "nascimentos": 10758,
+      "baixo_peso": 802,
+      "taxa_baixo_peso_pct": 7.45,
+      "uf_fonte": "SP"
+    },
+    {
+      "ano_nasc": 2014,
+      "nascimentos": 10923,
+      "baixo_peso": 769,
+      "taxa_baixo_peso_pct": 7.04,
+      "uf_fonte": "SP"
+    },
+    {
+      "ano_nasc": 2015,
+      "nascimentos": 11590,
+      "baixo_peso": 836,
+      "taxa_baixo_peso_pct": 7.21,
+      "uf_fonte": "SP"
+    },
+    {
+      "ano_nasc": 2016,
+      "nascimentos": 10971,
+      "baixo_peso": 806,
+      "taxa_baixo_peso_pct": 7.35,
+      "uf_fonte": "SP"
+    },
+    {
+      "ano_nasc": 2017,
+      "nascimentos": 11178,
+      "baixo_peso": 906,
+      "taxa_baixo_peso_pct": 8.11,
+      "uf_fonte": "SP"
+    },
+    {
+      "ano_nasc": 2018,
+      "nascimentos": 11368,
+      "baixo_peso": 804,
+      "taxa_baixo_peso_pct": 7.07,
+      "uf_fonte": "SP"
+    },
+    {
+      "ano_nasc": 2019,
+      "nascimentos": 11053,
+      "baixo_peso": 825,
+      "taxa_baixo_peso_pct": 7.46,
+      "uf_fonte": "SP"
+    },
+    {
+      "ano_nasc": 2020,
+      "nascimentos": 10416,
+      "baixo_peso": 748,
+      "taxa_baixo_peso_pct": 7.18,
+      "uf_fonte": "SP"
+    },
+    {
+      "ano_nasc": 2021,
+      "nascimentos": 10153,
+      "baixo_peso": 767,
+      "taxa_baixo_peso_pct": 7.55,
+      "uf_fonte": "SP"
+    },
+    {
+      "ano_nasc": 2022,
+      "nascimentos": 10071,
+      "baixo_peso": 799,
+      "taxa_baixo_peso_pct": 7.93,
+      "uf_fonte": "SP"
+    },
+    {
+      "ano_nasc": 2023,
+      "nascimentos": 9894,
+      "baixo_peso": 797,
+      "taxa_baixo_peso_pct": 8.06,
+      "uf_fonte": "SP"
+    },
+    {
+      "ano_nasc": 2024,
+      "nascimentos": 9199,
+      "baixo_peso": 672,
+      "taxa_baixo_peso_pct": 7.31,
+      "uf_fonte": "SP"
+    },
+    {
+      "ano_nasc": 2025,
+      "nascimentos": 9190,
+      "baixo_peso": 731,
+      "taxa_baixo_peso_pct": 7.95,
+      "uf_fonte": "SP"
+    }
+  ],
+  "por_municipio": [
+    {
+      "municipio": "Cabreúva",
+      "nascimentos": 10091,
+      "baixo_peso": 776,
+      "taxa_baixo_peso_pct": 7.69
+    },
+    {
+      "municipio": "Campo Limpo Paulista",
+      "nascimentos": 13632,
+      "baixo_peso": 1001,
+      "taxa_baixo_peso_pct": 7.34
+    },
+    {
+      "municipio": "Itupeva",
+      "nascimentos": 11969,
+      "baixo_peso": 868,
+      "taxa_baixo_peso_pct": 7.25
+    },
+    {
+      "municipio": "Jarinu",
+      "nascimentos": 6083,
+      "baixo_peso": 483,
+      "taxa_baixo_peso_pct": 7.94
+    },
+    {
+      "municipio": "Jundiaí",
+      "nascimentos": 76063,
+      "baixo_peso": 5661,
+      "taxa_baixo_peso_pct": 7.44
+    },
+    {
+      "municipio": "Louveira",
+      "nascimentos": 10185,
+      "baixo_peso": 704,
+      "taxa_baixo_peso_pct": 6.91
+    },
+    {
+      "municipio": "Várzea Paulista",
+      "nascimentos": 19465,
+      "baixo_peso": 1579,
+      "taxa_baixo_peso_pct": 8.11
+    }
+  ],
+  "descritiva": [
+    {
+      "variavel": "idade_mae",
+      "categoria": "10 a 19",
+      "n": 14968,
+      "pct": 10.15,
+      "baixo_peso": 1449,
+      "taxa_baixo_peso_pct": 9.68
+    },
+    {
+      "variavel": "idade_mae",
+      "categoria": "20 a 34",
+      "n": 105389,
+      "pct": 71.46,
+      "baixo_peso": 7334,
+      "taxa_baixo_peso_pct": 6.96
+    },
+    {
+      "variavel": "idade_mae",
+      "categoria": "35 ou mais",
+      "n": 27127,
+      "pct": 18.39,
+      "baixo_peso": 2289,
+      "taxa_baixo_peso_pct": 8.44
+    },
+    {
+      "variavel": "idade_mae",
+      "categoria": "Ignorado",
+      "n": 4,
+      "pct": 0.0,
+      "baixo_peso": 0,
+      "taxa_baixo_peso_pct": 0.0
+    },
+    {
+      "variavel": "qtd_gestacoes_anteriores",
+      "categoria": "0",
+      "n": 59626,
+      "pct": 40.43,
+      "baixo_peso": 4911,
+      "taxa_baixo_peso_pct": 8.24
+    },
+    {
+      "variavel": "qtd_gestacoes_anteriores",
+      "categoria": "1",
+      "n": 45956,
+      "pct": 31.16,
+      "baixo_peso": 3009,
+      "taxa_baixo_peso_pct": 6.55
+    },
+    {
+      "variavel": "qtd_gestacoes_anteriores",
+      "categoria": "2",
+      "n": 23667,
+      "pct": 16.05,
+      "baixo_peso": 1627,
+      "taxa_baixo_peso_pct": 6.87
+    },
+    {
+      "variavel": "qtd_gestacoes_anteriores",
+      "categoria": "3 ou mais",
+      "n": 17724,
+      "pct": 12.02,
+      "baixo_peso": 1492,
+      "taxa_baixo_peso_pct": 8.42
+    },
+    {
+      "variavel": "qtd_gestacoes_anteriores",
+      "categoria": "Ignorado",
+      "n": 515,
+      "pct": 0.35,
+      "baixo_peso": 33,
+      "taxa_baixo_peso_pct": 6.41
+    },
+    {
+      "variavel": "qtd_partos_normais",
+      "categoria": "0",
+      "n": 98167,
+      "pct": 66.56,
+      "baixo_peso": 7388,
+      "taxa_baixo_peso_pct": 7.53
+    },
+    {
+      "variavel": "qtd_partos_normais",
+      "categoria": "1",
+      "n": 29266,
+      "pct": 19.84,
+      "baixo_peso": 2115,
+      "taxa_baixo_peso_pct": 7.23
+    },
+    {
+      "variavel": "qtd_partos_normais",
+      "categoria": "2 ou mais",
+      "n": 19506,
+      "pct": 13.23,
+      "baixo_peso": 1531,
+      "taxa_baixo_peso_pct": 7.85
+    },
+    {
+      "variavel": "qtd_partos_normais",
+      "categoria": "Ignorado",
+      "n": 549,
+      "pct": 0.37,
+      "baixo_peso": 38,
+      "taxa_baixo_peso_pct": 6.92
+    },
+    {
+      "variavel": "qtd_partos_cesareos",
+      "categoria": "0",
+      "n": 107754,
+      "pct": 73.06,
+      "baixo_peso": 8618,
+      "taxa_baixo_peso_pct": 8.0
+    },
+    {
+      "variavel": "qtd_partos_cesareos",
+      "categoria": "1",
+      "n": 30142,
+      "pct": 20.44,
+      "baixo_peso": 1817,
+      "taxa_baixo_peso_pct": 6.03
+    },
+    {
+      "variavel": "qtd_partos_cesareos",
+      "categoria": "2 ou mais",
+      "n": 9034,
+      "pct": 6.13,
+      "baixo_peso": 596,
+      "taxa_baixo_peso_pct": 6.6
+    },
+    {
+      "variavel": "qtd_partos_cesareos",
+      "categoria": "Ignorado",
+      "n": 558,
+      "pct": 0.38,
+      "baixo_peso": 41,
+      "taxa_baixo_peso_pct": 7.35
+    },
+    {
+      "variavel": "qtd_filhos_vivos",
+      "categoria": "0",
+      "n": 68564,
+      "pct": 46.49,
+      "baixo_peso": 5849,
+      "taxa_baixo_peso_pct": 8.53
+    },
+    {
+      "variavel": "qtd_filhos_vivos",
+      "categoria": "1",
+      "n": 48736,
+      "pct": 33.04,
+      "baixo_peso": 3037,
+      "taxa_baixo_peso_pct": 6.23
+    },
+    {
+      "variavel": "qtd_filhos_vivos",
+      "categoria": "2",
+      "n": 19533,
+      "pct": 13.24,
+      "baixo_peso": 1278,
+      "taxa_baixo_peso_pct": 6.54
+    },
+    {
+      "variavel": "qtd_filhos_vivos",
+      "categoria": "3 ou mais",
+      "n": 10431,
+      "pct": 7.07,
+      "baixo_peso": 887,
+      "taxa_baixo_peso_pct": 8.5
+    },
+    {
+      "variavel": "qtd_filhos_vivos",
+      "categoria": "Ignorado",
+      "n": 224,
+      "pct": 0.15,
+      "baixo_peso": 21,
+      "taxa_baixo_peso_pct": 9.38
+    },
+    {
+      "variavel": "qtd_perdas_fetais_abortos",
+      "categoria": "0",
+      "n": 119365,
+      "pct": 80.93,
+      "baixo_peso": 8614,
+      "taxa_baixo_peso_pct": 7.22
+    },
+    {
+      "variavel": "qtd_perdas_fetais_abortos",
+      "categoria": "1",
+      "n": 22187,
+      "pct": 15.04,
+      "baixo_peso": 1848,
+      "taxa_baixo_peso_pct": 8.33
+    },
+    {
+      "variavel": "qtd_perdas_fetais_abortos",
+      "categoria": "2 ou mais",
+      "n": 5630,
+      "pct": 3.82,
+      "baixo_peso": 587,
+      "taxa_baixo_peso_pct": 10.43
+    },
+    {
+      "variavel": "qtd_perdas_fetais_abortos",
+      "categoria": "Ignorado",
+      "n": 306,
+      "pct": 0.21,
+      "baixo_peso": 23,
+      "taxa_baixo_peso_pct": 7.52
+    },
+    {
+      "variavel": "id_raca_cor_mae",
+      "categoria": "Branca",
+      "n": 87365,
+      "pct": 59.24,
+      "baixo_peso": 6237,
+      "taxa_baixo_peso_pct": 7.14
+    },
+    {
+      "variavel": "id_raca_cor_mae",
+      "categoria": "Preta",
+      "n": 9142,
+      "pct": 6.2,
+      "baixo_peso": 817,
+      "taxa_baixo_peso_pct": 8.94
+    },
+    {
+      "variavel": "id_raca_cor_mae",
+      "categoria": "Amarela",
+      "n": 618,
+      "pct": 0.42,
+      "baixo_peso": 42,
+      "taxa_baixo_peso_pct": 6.8
+    },
+    {
+      "variavel": "id_raca_cor_mae",
+      "categoria": "Parda",
+      "n": 49390,
+      "pct": 33.49,
+      "baixo_peso": 3917,
+      "taxa_baixo_peso_pct": 7.93
+    },
+    {
+      "variavel": "id_raca_cor_mae",
+      "categoria": "Indígena",
+      "n": 81,
+      "pct": 0.05,
+      "baixo_peso": 3,
+      "taxa_baixo_peso_pct": 3.7
+    },
+    {
+      "variavel": "id_raca_cor_mae",
+      "categoria": "Ignorado",
+      "n": 892,
+      "pct": 0.6,
+      "baixo_peso": 56,
+      "taxa_baixo_peso_pct": 6.28
+    },
+    {
+      "variavel": "id_escolaridade_mae_2010",
+      "categoria": "Sem escolaridade",
+      "n": 121,
+      "pct": 0.08,
+      "baixo_peso": 14,
+      "taxa_baixo_peso_pct": 11.57
+    },
+    {
+      "variavel": "id_escolaridade_mae_2010",
+      "categoria": "Fundamental I",
+      "n": 2107,
+      "pct": 1.43,
+      "baixo_peso": 181,
+      "taxa_baixo_peso_pct": 8.59
+    },
+    {
+      "variavel": "id_escolaridade_mae_2010",
+      "categoria": "Fundamental II",
+      "n": 17689,
+      "pct": 11.99,
+      "baixo_peso": 1629,
+      "taxa_baixo_peso_pct": 9.21
+    },
+    {
+      "variavel": "id_escolaridade_mae_2010",
+      "categoria": "Médio",
+      "n": 85285,
+      "pct": 57.83,
+      "baixo_peso": 6424,
+      "taxa_baixo_peso_pct": 7.53
+    },
+    {
+      "variavel": "id_escolaridade_mae_2010",
+      "categoria": "Superior incompleto",
+      "n": 7499,
+      "pct": 5.08,
+      "baixo_peso": 505,
+      "taxa_baixo_peso_pct": 6.73
+    },
+    {
+      "variavel": "id_escolaridade_mae_2010",
+      "categoria": "Superior completo",
+      "n": 34151,
+      "pct": 23.16,
+      "baixo_peso": 2278,
+      "taxa_baixo_peso_pct": 6.67
+    },
+    {
+      "variavel": "id_escolaridade_mae_2010",
+      "categoria": "Ignorado",
+      "n": 636,
+      "pct": 0.43,
+      "baixo_peso": 41,
+      "taxa_baixo_peso_pct": 6.45
+    },
+    {
+      "variavel": "id_estado_civil_mae",
+      "categoria": "Solteira",
+      "n": 59780,
+      "pct": 40.53,
+      "baixo_peso": 5185,
+      "taxa_baixo_peso_pct": 8.67
+    },
+    {
+      "variavel": "id_estado_civil_mae",
+      "categoria": "Casada",
+      "n": 72178,
+      "pct": 48.94,
+      "baixo_peso": 4840,
+      "taxa_baixo_peso_pct": 6.71
+    },
+    {
+      "variavel": "id_estado_civil_mae",
+      "categoria": "Viúva",
+      "n": 265,
+      "pct": 0.18,
+      "baixo_peso": 21,
+      "taxa_baixo_peso_pct": 7.92
+    },
+    {
+      "variavel": "id_estado_civil_mae",
+      "categoria": "Separada/divorciada",
+      "n": 4486,
+      "pct": 3.04,
+      "baixo_peso": 355,
+      "taxa_baixo_peso_pct": 7.91
+    },
+    {
+      "variavel": "id_estado_civil_mae",
+      "categoria": "União estável",
+      "n": 10434,
+      "pct": 7.07,
+      "baixo_peso": 645,
+      "taxa_baixo_peso_pct": 6.18
+    },
+    {
+      "variavel": "id_estado_civil_mae",
+      "categoria": "Ignorado",
+      "n": 345,
+      "pct": 0.23,
+      "baixo_peso": 26,
+      "taxa_baixo_peso_pct": 7.54
+    }
+  ],
+  "divisao": {
+    "treino": {
+      "anos": "2012–2021",
+      "n": 109134,
+      "baixo_peso": 8073,
+      "prevalencia_pct": 7.4
+    },
+    "validacao": {
+      "anos": "2022–2023",
+      "n": 19965,
+      "baixo_peso": 1596,
+      "prevalencia_pct": 7.99
+    },
+    "teste": {
+      "anos": "2024–2025",
+      "n": 18389,
+      "baixo_peso": 1403,
+      "prevalencia_pct": 7.63
+    }
+  },
+  "n_colunas_apos_preprocessamento": 22,
+  "busca": [
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 50,
+      "class_weight": "None",
+      "auc_roc_val": 0.5872,
+      "auc_pr_val": 0.1063,
+      "brier_val": 0.0733,
+      "seg": 20.2
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 100,
+      "class_weight": "None",
+      "auc_roc_val": 0.587,
+      "auc_pr_val": 0.1058,
+      "brier_val": 0.0733,
+      "seg": 20.4
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 200,
+      "class_weight": "None",
+      "auc_roc_val": 0.587,
+      "auc_pr_val": 0.1055,
+      "brier_val": 0.0733,
+      "seg": 19.8
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 400,
+      "class_weight": "None",
+      "auc_roc_val": 0.5869,
+      "auc_pr_val": 0.1053,
+      "brier_val": 0.0733,
+      "seg": 19.8
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 800,
+      "class_weight": "None",
+      "auc_roc_val": 0.5856,
+      "auc_pr_val": 0.104,
+      "brier_val": 0.0733,
+      "seg": 19.9
+    },
+    {
+      "max_depth": 4,
+      "min_samples_leaf": 50,
+      "class_weight": "None",
+      "auc_roc_val": 0.5903,
+      "auc_pr_val": 0.1078,
+      "brier_val": 0.0732,
+      "seg": 22.7
+    },
+    {
+      "max_depth": 4,
+      "min_samples_leaf": 100,
+      "class_weight": "None",
+      "auc_roc_val": 0.5902,
+      "auc_pr_val": 0.1072,
+      "brier_val": 0.0732,
+      "seg": 22.2
+    },
+    {
+      "max_depth": 4,
+      "min_samples_leaf": 200,
+      "class_weight": "None",
+      "auc_roc_val": 0.5907,
+      "auc_pr_val": 0.107,
+      "brier_val": 0.0732,
+      "seg": 22.3
+    },
+    {
+      "max_depth": 4,
+      "min_samples_leaf": 400,
+      "class_weight": "None",
+      "auc_roc_val": 0.5893,
+      "auc_pr_val": 0.1057,
+      "brier_val": 0.0732,
+      "seg": 21.5
+    },
+    {
+      "max_depth": 4,
+      "min_samples_leaf": 800,
+      "class_weight": "None",
+      "auc_roc_val": 0.5882,
+      "auc_pr_val": 0.1046,
+      "brier_val": 0.0732,
+      "seg": 21.9
+    },
+    {
+      "max_depth": 6,
+      "min_samples_leaf": 50,
+      "class_weight": "None",
+      "auc_roc_val": 0.5927,
+      "auc_pr_val": 0.1079,
+      "brier_val": 0.0731,
+      "seg": 26.4
+    },
+    {
+      "max_depth": 6,
+      "min_samples_leaf": 100,
+      "class_weight": "None",
+      "auc_roc_val": 0.5927,
+      "auc_pr_val": 0.108,
+      "brier_val": 0.0731,
+      "seg": 27.0
+    },
+    {
+      "max_depth": 6,
+      "min_samples_leaf": 200,
+      "class_weight": "None",
+      "auc_roc_val": 0.5918,
+      "auc_pr_val": 0.1072,
+      "brier_val": 0.0731,
+      "seg": 26.3
+    },
+    {
+      "max_depth": 6,
+      "min_samples_leaf": 400,
+      "class_weight": "None",
+      "auc_roc_val": 0.5903,
+      "auc_pr_val": 0.1061,
+      "brier_val": 0.0731,
+      "seg": 26.1
+    },
+    {
+      "max_depth": 6,
+      "min_samples_leaf": 800,
+      "class_weight": "None",
+      "auc_roc_val": 0.5886,
+      "auc_pr_val": 0.1041,
+      "brier_val": 0.0732,
+      "seg": 25.8
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 50,
+      "class_weight": "None",
+      "auc_roc_val": 0.5934,
+      "auc_pr_val": 0.1078,
+      "brier_val": 0.073,
+      "seg": 29.5
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 100,
+      "class_weight": "None",
+      "auc_roc_val": 0.5936,
+      "auc_pr_val": 0.1075,
+      "brier_val": 0.0731,
+      "seg": 29.6
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 200,
+      "class_weight": "None",
+      "auc_roc_val": 0.5931,
+      "auc_pr_val": 0.1067,
+      "brier_val": 0.0731,
+      "seg": 28.6
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 400,
+      "class_weight": "None",
+      "auc_roc_val": 0.5916,
+      "auc_pr_val": 0.1054,
+      "brier_val": 0.0731,
+      "seg": 27.8
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 800,
+      "class_weight": "None",
+      "auc_roc_val": 0.5895,
+      "auc_pr_val": 0.1041,
+      "brier_val": 0.0731,
+      "seg": 26.8
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 50,
+      "class_weight": "None",
+      "auc_roc_val": 0.5921,
+      "auc_pr_val": 0.1071,
+      "brier_val": 0.073,
+      "seg": 32.4
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 100,
+      "class_weight": "None",
+      "auc_roc_val": 0.5929,
+      "auc_pr_val": 0.1071,
+      "brier_val": 0.073,
+      "seg": 31.1
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 200,
+      "class_weight": "None",
+      "auc_roc_val": 0.5932,
+      "auc_pr_val": 0.1062,
+      "brier_val": 0.0731,
+      "seg": 30.4
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 400,
+      "class_weight": "None",
+      "auc_roc_val": 0.5919,
+      "auc_pr_val": 0.1057,
+      "brier_val": 0.0731,
+      "seg": 28.7
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 800,
+      "class_weight": "None",
+      "auc_roc_val": 0.5899,
+      "auc_pr_val": 0.1039,
+      "brier_val": 0.0731,
+      "seg": 26.9
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 50,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5832,
+      "auc_pr_val": 0.1033,
+      "brier_val": 0.246,
+      "seg": 35.9
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 100,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.583,
+      "auc_pr_val": 0.1032,
+      "brier_val": 0.246,
+      "seg": 36.9
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 200,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5831,
+      "auc_pr_val": 0.1031,
+      "brier_val": 0.246,
+      "seg": 36.8
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 400,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5834,
+      "auc_pr_val": 0.1031,
+      "brier_val": 0.246,
+      "seg": 37.5
+    },
+    {
+      "max_depth": 3,
+      "min_samples_leaf": 800,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5825,
+      "auc_pr_val": 0.1024,
+      "brier_val": 0.246,
+      "seg": 36.5
+    },
+    {
+      "max_depth": 4,
+      "min_samples_leaf": 50,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5884,
+      "auc_pr_val": 0.106,
+      "brier_val": 0.2452,
+      "seg": 38.4
+    },
+    {
+      "max_depth": 4,
+      "min_samples_leaf": 100,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5878,
+      "auc_pr_val": 0.1054,
+      "brier_val": 0.2452,
+      "seg": 38.9
+    },
+    {
+      "max_depth": 4,
+      "min_samples_leaf": 200,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5885,
+      "auc_pr_val": 0.1056,
+      "brier_val": 0.2453,
+      "seg": 38.1
+    },
+    {
+      "max_depth": 4,
+      "min_samples_leaf": 400,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5876,
+      "auc_pr_val": 0.1048,
+      "brier_val": 0.2454,
+      "seg": 38.2
+    },
+    {
+      "max_depth": 4,
+      "min_samples_leaf": 800,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5858,
+      "auc_pr_val": 0.1031,
+      "brier_val": 0.2456,
+      "seg": 38.5
+    },
+    {
+      "max_depth": 6,
+      "min_samples_leaf": 50,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5908,
+      "auc_pr_val": 0.1063,
+      "brier_val": 0.2435,
+      "seg": 43.4
+    },
+    {
+      "max_depth": 6,
+      "min_samples_leaf": 100,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.591,
+      "auc_pr_val": 0.1065,
+      "brier_val": 0.2439,
+      "seg": 43.4
+    },
+    {
+      "max_depth": 6,
+      "min_samples_leaf": 200,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5899,
+      "auc_pr_val": 0.1056,
+      "brier_val": 0.2441,
+      "seg": 42.9
+    },
+    {
+      "max_depth": 6,
+      "min_samples_leaf": 400,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5891,
+      "auc_pr_val": 0.1051,
+      "brier_val": 0.2445,
+      "seg": 42.3
+    },
+    {
+      "max_depth": 6,
+      "min_samples_leaf": 800,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5879,
+      "auc_pr_val": 0.1036,
+      "brier_val": 0.2448,
+      "seg": 41.2
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 50,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5909,
+      "auc_pr_val": 0.1055,
+      "brier_val": 0.2413,
+      "seg": 45.0
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 100,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5918,
+      "auc_pr_val": 0.1061,
+      "brier_val": 0.2423,
+      "seg": 45.1
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 200,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5914,
+      "auc_pr_val": 0.1052,
+      "brier_val": 0.2431,
+      "seg": 44.2
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 400,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5905,
+      "auc_pr_val": 0.105,
+      "brier_val": 0.2438,
+      "seg": 43.8
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 800,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5883,
+      "auc_pr_val": 0.1034,
+      "brier_val": 0.2446,
+      "seg": 43.1
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 50,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5892,
+      "auc_pr_val": 0.1052,
+      "brier_val": 0.238,
+      "seg": 49.2
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 100,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5914,
+      "auc_pr_val": 0.1056,
+      "brier_val": 0.2404,
+      "seg": 47.6
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 200,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5919,
+      "auc_pr_val": 0.1055,
+      "brier_val": 0.2423,
+      "seg": 46.2
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 400,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5908,
+      "auc_pr_val": 0.105,
+      "brier_val": 0.2435,
+      "seg": 44.9
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 800,
+      "class_weight": "balanced_subsample",
+      "auc_roc_val": 0.5885,
+      "auc_pr_val": 0.1032,
+      "brier_val": 0.2445,
+      "seg": 42.9
+    }
+  ],
+  "params": {
+    "max_depth": 6,
+    "min_samples_leaf": 100,
+    "class_weight": "None",
+    "n_estimators": 300,
+    "max_features": "sqrt"
+  },
+  "melhor_na_borda_da_grade": {
+    "max_depth": false,
+    "min_samples_leaf": false
+  },
+  "configuracoes_a_menos_de_0002_do_melhor": 17,
+  "teste": {
+    "auc_roc": 0.5666,
+    "auc_pr": 0.0943,
+    "prevalencia_teste": 0.0763,
+    "brier_sem_calibracao": 0.0702,
+    "brier_calibrado": 0.0703,
+    "brier_referencia_prevalencia_treino": 0.0705,
+    "prevalencia_treino": 0.074,
+    "prob_calibrada_min_max": [
+      0.0354,
+      0.2053
+    ]
+  },
+  "ic95_bootstrap_teste": {
+    "auc_roc": [
+      0.552,
+      0.5815
+    ],
+    "auc_pr": [
+      0.0877,
+      0.1017
+    ],
+    "brier_calibrado": [
+      0.0672,
+      0.0734
+    ],
+    "sens_top10": [
+      0.1285,
+      0.1644
+    ],
+    "vpp_top10": [
+      0.0976,
+      0.1255
+    ]
+  },
+  "n_bootstrap": 1000,
+  "calibracao_decis_teste": [
+    {
+      "dec": 0,
+      "prob_calibrada_media": 0.0441,
+      "escore_bruto_medio": 0.0523,
+      "observado": 0.0466,
+      "n": 1868
+    },
+    {
+      "dec": 1,
+      "prob_calibrada_media": 0.0543,
+      "escore_bruto_medio": 0.0593,
+      "observado": 0.0608,
+      "n": 1825
+    },
+    {
+      "dec": 2,
+      "prob_calibrada_media": 0.0615,
+      "escore_bruto_medio": 0.0639,
+      "observado": 0.0707,
+      "n": 1824
+    },
+    {
+      "dec": 3,
+      "prob_calibrada_media": 0.0707,
+      "escore_bruto_medio": 0.0695,
+      "observado": 0.0662,
+      "n": 1844
+    },
+    {
+      "dec": 4,
+      "prob_calibrada_media": 0.0747,
+      "escore_bruto_medio": 0.0719,
+      "observado": 0.0829,
+      "n": 1834
+    },
+    {
+      "dec": 5,
+      "prob_calibrada_media": 0.0805,
+      "escore_bruto_medio": 0.0752,
+      "observado": 0.0729,
+      "n": 1838
+    },
+    {
+      "dec": 6,
+      "prob_calibrada_media": 0.0874,
+      "escore_bruto_medio": 0.0791,
+      "observado": 0.0729,
+      "n": 1839
+    },
+    {
+      "dec": 7,
+      "prob_calibrada_media": 0.0955,
+      "escore_bruto_medio": 0.0835,
+      "observado": 0.081,
+      "n": 1839
+    },
+    {
+      "dec": 8,
+      "prob_calibrada_media": 0.106,
+      "escore_bruto_medio": 0.089,
+      "observado": 0.0979,
+      "n": 1839
+    },
+    {
+      "dec": 9,
+      "prob_calibrada_media": 0.1294,
+      "escore_bruto_medio": 0.1005,
+      "observado": 0.1115,
+      "n": 1839
+    }
+  ],
+  "pontos_operacao_teste": [
+    {
+      "criterio": "5% de maior escore",
+      "limiar_escore": 0.0977,
+      "sinalizadas_pct": 5.21,
+      "sensibilidade": 0.0834,
+      "especificidade": 0.9505,
+      "vpp": 0.1221,
+      "f1": 0.0991,
+      "lift": 1.601,
+      "matriz": {
+        "vp": 117,
+        "fp": 841,
+        "fn": 1286,
+        "vn": 16145
+      }
+    },
+    {
+      "criterio": "10% de maior escore",
+      "limiar_escore": 0.0917,
+      "sinalizadas_pct": 10.02,
+      "sensibilidade": 0.1461,
+      "especificidade": 0.9036,
+      "vpp": 0.1112,
+      "f1": 0.1263,
+      "lift": 1.458,
+      "matriz": {
+        "vp": 205,
+        "fp": 1638,
+        "fn": 1198,
+        "vn": 15348
+      }
+    },
+    {
+      "criterio": "20% de maior escore",
+      "limiar_escore": 0.0859,
+      "sinalizadas_pct": 20.67,
+      "sensibilidade": 0.2823,
+      "especificidade": 0.7995,
+      "vpp": 0.1042,
+      "f1": 0.1522,
+      "lift": 1.366,
+      "matriz": {
+        "vp": 396,
+        "fp": 3405,
+        "fn": 1007,
+        "vn": 13581
+      }
+    },
+    {
+      "criterio": "30% de maior escore",
+      "limiar_escore": 0.0815,
+      "sinalizadas_pct": 30.55,
+      "sensibilidade": 0.3835,
+      "especificidade": 0.7009,
+      "vpp": 0.0958,
+      "f1": 0.1533,
+      "lift": 1.255,
+      "matriz": {
+        "vp": 538,
+        "fp": 5080,
+        "fn": 865,
+        "vn": 11906
+      }
+    },
+    {
+      "criterio": "máximo F1 na validação",
+      "limiar_escore": 0.08,
+      "sinalizadas_pct": 32.96,
+      "sensibilidade": 0.4091,
+      "especificidade": 0.677,
+      "vpp": 0.0947,
+      "f1": 0.1538,
+      "lift": 1.241,
+      "matriz": {
+        "vp": 574,
+        "fp": 5487,
+        "fn": 829,
+        "vn": 11499
+      }
+    },
+    {
+      "criterio": "referência: todas sinalizadas",
+      "limiar_escore": null,
+      "sinalizadas_pct": 100.0,
+      "sensibilidade": 1.0,
+      "especificidade": 0.0,
+      "vpp": 0.0763,
+      "f1": 0.1418,
+      "lift": 1.0,
+      "matriz": {
+        "vp": 1403,
+        "fp": 16986,
+        "fn": 0,
+        "vn": 0
+      }
+    }
+  ],
+  "por_ano_teste": [
+    {
+      "grupo": "2024",
+      "n": 9199,
+      "baixo_peso": 672,
+      "prevalencia_pct": 7.31,
+      "auc_roc": 0.5721,
+      "auc_pr": 0.0913,
+      "auc_roc_ic95": [
+        0.5511,
+        0.5924
+      ],
+      "sens_top10": 0.1518
+    },
+    {
+      "grupo": "2025",
+      "n": 9190,
+      "baixo_peso": 731,
+      "prevalencia_pct": 7.95,
+      "auc_roc": 0.5615,
+      "auc_pr": 0.0981,
+      "auc_roc_ic95": [
+        0.54,
+        0.585
+      ],
+      "sens_top10": 0.1409
+    }
+  ],
+  "por_municipio_teste": [
+    {
+      "grupo": "Cabreúva",
+      "n": 1346,
+      "baixo_peso": 105,
+      "prevalencia_pct": 7.8,
+      "auc_roc": 0.5499,
+      "auc_pr": 0.0934,
+      "auc_roc_ic95": [
+        0.491,
+        0.6064
+      ],
+      "sens_top10": 0.1905
+    },
+    {
+      "grupo": "Campo Limpo Paulista",
+      "n": 1419,
+      "baixo_peso": 109,
+      "prevalencia_pct": 7.68,
+      "auc_roc": 0.549,
+      "auc_pr": 0.0953,
+      "auc_roc_ic95": [
+        0.4919,
+        0.607
+      ],
+      "sens_top10": 0.1193
+    },
+    {
+      "grupo": "Itupeva",
+      "n": 1754,
+      "baixo_peso": 126,
+      "prevalencia_pct": 7.18,
+      "auc_roc": 0.5602,
+      "auc_pr": 0.0897,
+      "auc_roc_ic95": [
+        0.5082,
+        0.6068
+      ],
+      "sens_top10": 0.2143
+    },
+    {
+      "grupo": "Jarinu",
+      "n": 872,
+      "baixo_peso": 60,
+      "prevalencia_pct": 6.88,
+      "auc_roc": 0.5456,
+      "auc_pr": 0.0802,
+      "auc_roc_ic95": [
+        0.4726,
+        0.6159
+      ],
+      "sens_top10": 0.1167
+    },
+    {
+      "grupo": "Jundiaí",
+      "n": 9460,
+      "baixo_peso": 715,
+      "prevalencia_pct": 7.56,
+      "auc_roc": 0.5712,
+      "auc_pr": 0.0949,
+      "auc_roc_ic95": [
+        0.5489,
+        0.5943
+      ],
+      "sens_top10": 0.1287
+    },
+    {
+      "grupo": "Louveira",
+      "n": 1353,
+      "baixo_peso": 99,
+      "prevalencia_pct": 7.32,
+      "auc_roc": 0.5447,
+      "auc_pr": 0.0851,
+      "auc_roc_ic95": [
+        0.4777,
+        0.6029
+      ],
+      "sens_top10": 0.1212
+    },
+    {
+      "grupo": "Várzea Paulista",
+      "n": 2185,
+      "baixo_peso": 189,
+      "prevalencia_pct": 8.65,
+      "auc_roc": 0.5954,
+      "auc_pr": 0.1241,
+      "auc_roc_ic95": [
+        0.5541,
+        0.6355
+      ],
+      "sens_top10": 0.1799
+    }
+  ],
+  "importancia_permutacao": {
+    "idade_mae": {
+      "queda_auc_pr_media": 0.00409,
+      "queda_auc_pr_dp": 0.001,
+      "queda_auc_roc_media": 0.00958,
+      "queda_auc_roc_dp": 0.00299
+    },
+    "qtd_gestacoes_anteriores": {
+      "queda_auc_pr_media": -0.00028,
+      "queda_auc_pr_dp": 0.00068,
+      "queda_auc_roc_media": 0.00152,
+      "queda_auc_roc_dp": 0.00159
+    },
+    "qtd_partos_normais": {
+      "queda_auc_pr_media": 0.00088,
+      "queda_auc_pr_dp": 0.00031,
+      "queda_auc_roc_media": 0.00234,
+      "queda_auc_roc_dp": 0.00117
+    },
+    "qtd_partos_cesareos": {
+      "queda_auc_pr_media": 0.00133,
+      "queda_auc_pr_dp": 0.00058,
+      "queda_auc_roc_media": 0.00466,
+      "queda_auc_roc_dp": 0.00178
+    },
+    "qtd_filhos_vivos": {
+      "queda_auc_pr_media": 0.00513,
+      "queda_auc_pr_dp": 0.00154,
+      "queda_auc_roc_media": 0.01792,
+      "queda_auc_roc_dp": 0.00512
+    },
+    "qtd_perdas_fetais_abortos": {
+      "queda_auc_pr_media": -0.00127,
+      "queda_auc_pr_dp": 0.00165,
+      "queda_auc_roc_media": 0.00278,
+      "queda_auc_roc_dp": 0.00227
+    },
+    "id_raca_cor_mae": {
+      "queda_auc_pr_media": 0.00074,
+      "queda_auc_pr_dp": 0.0006,
+      "queda_auc_roc_media": 0.00241,
+      "queda_auc_roc_dp": 0.00125
+    },
+    "id_escolaridade_mae_2010": {
+      "queda_auc_pr_media": 0.0025,
+      "queda_auc_pr_dp": 0.00088,
+      "queda_auc_roc_media": 0.00474,
+      "queda_auc_roc_dp": 0.00154
+    },
+    "id_estado_civil_mae": {
+      "queda_auc_pr_media": 0.00482,
+      "queda_auc_pr_dp": 0.00134,
+      "queda_auc_roc_media": 0.01348,
+      "queda_auc_roc_dp": 0.00354
+    },
+    "historico_obstetrico": {
+      "queda_auc_pr_media": 0.00728,
+      "queda_auc_pr_dp": 0.00201,
+      "queda_auc_roc_media": 0.03411,
+      "queda_auc_roc_dp": 0.00506
+    }
+  },
+  "n_repeticoes_permutacao": 30,
+  "importancia_gini": {
+    "idade_mae": 0.19147,
+    "qtd_filhos_vivos": 0.163,
+    "id_estado_civil_mae": 0.14669,
+    "qtd_perdas_fetais_abortos": 0.12022,
+    "qtd_gestacoes_anteriores": 0.10442,
+    "id_escolaridade_mae_2010": 0.08693,
+    "qtd_partos_cesareos": 0.08433,
+    "qtd_partos_normais": 0.05771,
+    "id_raca_cor_mae": 0.04523
+  },
+  "sensibilidade_populacao": [
+    {
+      "populacao": "principal",
+      "n_total": 147488,
+      "n_teste": 18389,
+      "prevalencia_teste_pct": 7.63,
+      "auc_roc": 0.5666,
+      "auc_pr": 0.0943
+    },
+    {
+      "populacao": "gestação única, todos os pesos registrados (> 0 g)",
+      "n_total": 147576,
+      "n_teste": 18398,
+      "prevalencia_teste_pct": 7.67,
+      "auc_roc": 0.5652,
+      "auc_pr": 0.0944
+    },
+    {
+      "populacao": "inclui gestações múltiplas e ignoradas (peso ≥ 500 g)",
+      "n_total": 151278,
+      "n_teste": 18857,
+      "prevalencia_teste_pct": 9.0,
+      "auc_roc": 0.5725,
+      "auc_pr": 0.1135
+    }
+  ]
+}

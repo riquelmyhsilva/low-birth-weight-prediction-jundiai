@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+# raw data is downloaded by the pipeline and never committed
+*.dbc
+*.dbf
+data/
