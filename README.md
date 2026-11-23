@@ -46,7 +46,7 @@ Each step checks the previous one and only reprocesses data when its input chang
 ## Modeling
 
 - **Temporal split:** training 2012–2021 (109,134 births, 7.40% low birth weight), validation 2022–2023 (19,965; 7.99%) and test 2024–2025 (18,389; 7.63%).
-- **Missing data:** values coded as "ignored" or outside the valid range (0.001% to 0.72% per predictor) are treated as missing and filled by **multiple imputation** with chained equations (M = 5), fitted on the training period only and without the outcome.
+- **Missing data:** values coded as "ignored" or outside the valid range (0.003% to 0.60% per predictor) are treated as missing and filled by **multiple imputation** with chained equations (M = 5), fitted on the training period only and without the outcome.
 - **Model:** one Random Forest (scikit-learn 1.3.0, 300 trees, square root of the number of features at each split) per imputed dataset; the final probability is the average of the five forests.
 - **Hyperparameters:** maximum depth, minimum samples per leaf and class weighting, chosen from a 50-combination grid by the highest AUC-PR on validation.
 - **Calibration:** Platt scaling fitted on validation.
@@ -58,13 +58,13 @@ Reporting follows the TRIPOD statement.
 
 | Measure | Value (95% CI) |
 |---|---|
-| AUC-ROC | 0.567 (0.552–0.582) |
+| AUC-ROC | 0.567 (0.552–0.581) |
 | AUC-PR | 0.094 (0.088–0.102), prevalence 0.076 |
 | Brier score | 0.0703, vs 0.0705 for predicting the training prevalence for everyone |
 | Calibration intercept | −0.057 (−0.112 to −0.004) |
 | Calibration slope | 0.70 (0.54–0.86) |
 | Observed/expected ratio | 0.95 (0.90–1.00) |
-| Top 10% of scores | sensitivity 14.6% (12.9–16.4), PPV 11.1% (9.8–12.6), lift 1.46 |
+| Top 10% of scores | sensitivity 14.6% (12.8–16.4), PPV 11.1% (9.8–12.5), lift 1.46 |
 
 - **Discrimination is weak.** It is in line with studies that also exclude delivery information, such as Ren et al. (2023), with AUC-ROC around 0.57.
 - **The drop from validation to test is drift, not case-mix.**
